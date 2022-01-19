@@ -30,10 +30,10 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀LuciTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**StarTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/StarTagBot?startgroup=a')],
+		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/StarTaggerBot?startgroup=a')],
                       [Button.url('Support🛠', 'https://t.me/BotDestekGrubu')],
                       [Button.url('Resmi Kanal📣', 'https://t.me/StarMusicKanal')],
 		      [Button.url('Developer👨🏻‍💻', 'https://t.me/ByWolk')],

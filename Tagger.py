@@ -30,7 +30,9 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**StarTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**𝗠𝗲𝗿𝗵𝗮𝗯𝗮 ❤️**\● 𝗚𝗿𝘂𝗯𝘂𝗻𝘂𝘇𝗱𝗮𝗸𝗶 𝗡𝗲𝗿𝗱𝗲𝘆𝘀𝗲 𝘁𝘂‌𝗺 𝘂‌𝘆𝗲𝗹𝗲𝗿𝗲 𝗲𝘁𝗶𝗸𝗲𝘁 𝗮𝘁𝗮𝗯𝗶𝗹𝗶𝗿𝗶𝗺 𝗯𝗲𝗻𝗶 𝗴𝗿𝘂𝗯𝘂𝗻𝘂𝘇𝗮 𝗲𝗸𝗹𝗲𝘆𝗶𝗽 𝘆𝗲𝘁𝗸𝗶 𝘃𝗲𝗿𝗺𝗲𝗻𝗶𝘇 𝘆𝗲𝘁𝗲𝗿𝗹𝗶 . . . 
+
+● 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿 𝗶𝗰𝗶𝗻  ➪  /help  𝘆𝗮𝘇𝗺𝗮𝗻𝗶𝘇 𝘆𝗲𝘁𝗲𝗿𝗹𝗶𝗱𝗶𝗿  . . .**",
                     buttons=(
                    
 		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/StarTaggerBot?startgroup=a')],

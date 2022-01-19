@@ -30,13 +30,13 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**𝗠𝗲𝗿𝗵𝗮𝗯𝗮 ❤️**\n ● 𝗚𝗿𝘂𝗯𝘂𝗻𝘂𝘇𝗱𝗮𝗸𝗶 𝗡𝗲𝗿𝗱𝗲𝘆𝘀𝗲 𝘁𝘂‌𝗺 𝘂‌𝘆𝗲𝗹𝗲𝗿𝗲 𝗲𝘁𝗶𝗸𝗲𝘁 𝗮𝘁𝗮𝗯𝗶𝗹𝗶𝗿𝗶𝗺 𝗯𝗲𝗻𝗶 𝗴𝗿𝘂𝗯𝘂𝗻𝘂𝘇𝗮 𝗲𝗸𝗹𝗲𝘆𝗶𝗽 𝘆𝗲𝘁𝗸𝗶 𝘃𝗲𝗿𝗺𝗲𝗻𝗶𝘇 𝘆𝗲𝘁𝗲𝗿𝗹𝗶 . . . \n● 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿 𝗶𝗰𝗶𝗻  ➪  /help  𝘆𝗮𝘇𝗺𝗮𝗻𝗶𝘇 𝘆𝗲𝘁𝗲𝗿𝗹𝗶𝗱𝗶𝗿  . . .**",
+  await event.reply("**𝗠𝗲𝗿𝗵𝗮𝗯𝗮 ❤️**\n\n ● 𝗚𝗿𝘂𝗯𝘂𝗻𝘂𝘇𝗱𝗮𝗸𝗶 𝗡𝗲𝗿𝗱𝗲𝘆𝘀𝗲 𝘁𝘂‌𝗺 𝘂‌𝘆𝗲𝗹𝗲𝗿𝗲 𝗲𝘁𝗶𝗸𝗲𝘁 𝗮𝘁𝗮𝗯𝗶𝗹𝗶𝗿𝗶𝗺 𝗯𝗲𝗻𝗶 𝗴𝗿𝘂𝗯𝘂𝗻𝘂𝘇𝗮 𝗲𝗸𝗹𝗲𝘆𝗶𝗽 𝘆𝗲𝘁𝗸𝗶 𝘃𝗲𝗿𝗺𝗲𝗻𝗶𝘇 𝘆𝗲𝘁𝗲𝗿𝗹𝗶 . . . \n\n● 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿 𝗶𝗰𝗶𝗻  ➪  /help  𝘆𝗮𝘇𝗺𝗮𝗻𝗶𝘇 𝘆𝗲𝘁𝗲𝗿𝗹𝗶𝗱𝗶𝗿  . . .",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/StarTaggerBot?startgroup=a')],
-                      [Button.url('Support🛠', 'https://t.me/BotDestekGrubu')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/StarBotKanal')],
-		      [Button.url('Developer👨🏻‍💻', 'https://t.me/ByWolk')],
+		      [Button.url(𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/StarTaggerBot?startgroup=a')],
+                      [Button.url('𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂 🛠', 'https://t.me/BotDestekGrubu')],
+                      [Button.url('𝗕𝗶𝗹𝗴𝗶 𝗞𝗮𝗻𝗮𝗹𝗶 💬', 'https://t.me/StarBotKanal')],
+		      [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 🤠', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )
@@ -45,10 +45,10 @@ async def help(event):
   helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Etiketler**\n\n**/start - botu başlatır**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/StarTagBot?startgroup=a')],
-                      [Button.url('Support👨‍💻', 'https://t.me/BotDestekGrubu')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/StarBotKanal')],
-		      [Button.url('Developer🧑‍🔧', 'https://t.me/ByWolk')],
+                      [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/StarTagBot?startgroup=a')],
+                      [Button.url('𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂 🛠', 'https://t.me/BotDestekGrubu')],
+                      [Button.url('𝗕𝗶𝗹𝗴𝗶 𝗞𝗮𝗻𝗮𝗹𝗶 💬', 'https://t.me/StarBotKanal')],
+		      [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 🤠', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )
@@ -58,7 +58,7 @@ async def help(event):
   helptext = "**Çok özellikleri Etiket Botu Bulmaya Çalışan Grub Sahibleri @StarTaggerBot Size Göre:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @StarTagBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Botu Gruba Ekle❤️', 'https://t.me/lucitaggerbot?startgroup=a')],
+                      [Button.url('𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/startaggerbot?startgroup=a')],
                     ),
                     link_preview=False
                    )
@@ -110,7 +110,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("** Etiketleme işlemi başarıyla durduruldu🤠**")
+        await event.respond("** 𝗘𝘁𝗶𝗸𝗲𝘁𝗹𝗲𝗺𝗲 𝗶𝘀𝗹𝗲𝗺𝗶 𝗯𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗱𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -128,7 +128,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -164,9 +164,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("Önceki Mesajlara Cevab Vermeyin")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Başlatmak için sebeb yok😕")
+    return await event.respond("𝗕𝗮𝘀𝗹𝗮𝘁𝗺𝗮𝗸 𝗶𝗰𝗶𝗻 𝘀𝗲𝗯𝗲𝗽 𝘆𝗼𝗸 😕")
   else:
-    return await event.respond("Işleme başlamak için sebeb yok")
+    return await event.respond("𝗜𝘀𝗹𝗲𝗺𝗲 𝗯𝗮𝘀𝗹𝗮𝗺𝗮𝗸 𝗶𝗰𝗶𝗻 𝘀𝗲𝗯𝗲𝗽 𝘆𝗼𝗸")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
@@ -176,7 +176,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -194,7 +194,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("işlem başarıyla durduruldu🤠")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -229,9 +229,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("**önceki mesajı etiketleye bilmerim*")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Başlamaq için Sebeb Yazın❗️")
+    return await event.respond("𝗕𝗮𝘀𝗹𝗮𝗺𝗮𝗸 𝗶𝗰𝗶𝗻 𝘀𝗲𝗯𝗲𝗽 𝗴𝗶𝗿𝗶𝗻🤠")
   else:
-    return await event.respond("**Işleme başlamağım için sebeb yazın..**")
+    return await event.respond("**𝗜𝘀𝗹𝗲𝗺𝗲 𝗯𝗮𝘀𝗹𝗮𝗺𝗮𝗺 𝗶𝗰𝗶𝗻 𝘀𝗲𝗯𝗲𝗽 𝗴𝗶𝗿𝗶𝗻 ...**")
   
   if mode == "text_on_cmd":
     tekli_calisan.append(event.chat_id)
@@ -241,7 +241,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**👤 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @StarBotKanal**❌****")
+        await event.respond("**𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂\n\n**𝗕𝘂𝗱𝗮 𝘀𝗶𝘇𝗶𝗻 𝗿𝗲𝗸𝗹𝗮𝗺𝗶𝗻𝗶𝘇 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿 @StarBotKanal**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -259,7 +259,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌**")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**𝗕𝘂𝗱𝗮 𝘀𝗶𝘇𝗶𝗻 𝗿𝗲𝗸𝗹𝗮𝗺𝗶𝗻𝗶𝘇 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿 @StarMusicKanal**❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -293,5 +293,5 @@ async def mentionall(tagadmin):
 		sleep(0.5)
 
 
-print(">> Bot çalışıyor sakin ol 😃 @StarBotKanal bilgi alabilirsin <<")
+print(">> 𝗕𝗼𝘁 𝗰𝗮𝗹𝗶𝘀𝗶𝘆𝗼𝗿 𝗦𝗮𝗸𝗶𝗻 𝗢𝗹 𝗗𝗼𝘀𝘁𝘂𝗺 😃 @StarBotKanal bilgi alabilirsin <<")
 client.run_until_disconnected()

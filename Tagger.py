@@ -42,7 +42,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Etiketler**\n\n**/start - botu başlatır**"
+  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Etiketler**\n\n**/cancel - etiket işlemini durdur**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/StarTagBot?startgroup=a')],
@@ -55,7 +55,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çok özellikleri Etiket Botu Bulmaya Çalışan Grub Sahibleri @StarTaggerBot Size Göre:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @StarTagBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
+  helptext = "**Çok özellikleri Etiket Botu Bulmaya Çalışan Grub Sahibleri @StarTaggerBot Size Göre:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @StarTaggerBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelere , etiket ata bilirsiz **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/startaggerbot?startgroup=a')],
@@ -259,7 +259,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**𝗕𝘂𝗱𝗮 𝘀𝗶𝘇𝗶𝗻 𝗿𝗲𝗸𝗹𝗮𝗺𝗶𝗻𝗶𝘇 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿 @StarMusicKanal**❌**")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**𝗕𝘂𝗱𝗮 𝘀𝗶𝘇𝗶𝗻 𝗿𝗲𝗸𝗹𝗮𝗺𝗶𝗻𝗶𝘇 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿 @StarMusicKanal**🤠")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)

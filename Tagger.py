@@ -34,7 +34,6 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/StarTaggerBot?startgroup=a')],
-                      [Button.url('𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂 🛠', 'https://t.me/BotDestekGrubu')],
                       [Button.url('𝗕𝗶𝗹𝗴𝗶 𝗞𝗮𝗻𝗮𝗹𝗶 💬', 'https://t.me/StarBotKanal')],
 		      [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 🤠', 'https://t.me/ByWolk')],
                     ),
@@ -42,11 +41,10 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebep> - Emoji ile etiketler**\n\n**/tektag <sebeb> - Üyeleri Tek Tek Etiketler**\n\n**/admins <sebeb> - Yöneticileri Tek Tek Etiketler**\n\n**/cancel <sebep> - etiketleme işlemini durdurur**"
+  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/tektag <sebeb> - Üyeleri Tek Tek Etiketler**\n\n**/cancel - etiketleme işlemini durdurur**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/StarTagBot?startgroup=a')],
-                      [Button.url('𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂 🛠', 'https://t.me/BotDestekGrubu')],
+                      [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/StarTagBot?startgroup=a')],  
                       [Button.url('𝗕𝗶𝗹𝗴𝗶 𝗞𝗮𝗻𝗮𝗹𝗶 💬', 'https://t.me/StarBotKanal')],
 		      [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 🤠', 'https://t.me/ByWolk')],
                     ),

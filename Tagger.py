@@ -100,7 +100,7 @@ async def mentionall(event):
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
     return await event.respond("Etiket Yapmak için sebeb yok❗️")
   else:
-    return await event.respond("**Etikete Başlamak için sebeb yazın...!**")
+    return await event.respond("**𝗘𝘁𝗶𝗸𝗲𝘁𝗲 𝗯𝗮𝘀𝗹𝗮𝗺𝗮𝗸 𝗶𝗰𝗶𝗻 𝘀𝗲𝗯𝗲𝗽 𝘆𝗮𝘇𝗶𝗻...!**")
   
   if mode == "text_on_cmd":
     emoji_calisan.append(event.chat_id)
@@ -128,7 +128,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**𝗜𝘀𝘁𝗲𝗿𝘀𝗲𝗻𝗶𝘇 𝗕𝘂𝗿𝗮𝗱𝗮 𝘀𝗶𝘇𝗶𝗻 𝗿𝗲𝗸𝗹𝗮𝗺𝗶𝗻𝗶𝘇 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿 @StarMusicKanal**🤠")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -176,7 +176,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**Buda sizin reklamınız ola bilir @StarMusicKanal**❌")
+        await event.respond("𝗜𝘀𝗹𝗲𝗺 𝗕𝗮𝘀𝗮𝗿𝗶𝘆𝗹𝗮 𝗗𝘂𝗿𝗱𝘂𝗿𝘂𝗹𝗱𝘂 🤠\n\n**𝗜𝘀𝘁𝗲𝗿𝘀𝗲𝗻𝗶𝘇 𝗕𝘂𝗿𝗮𝗱𝗮 𝘀𝗶𝘇𝗶𝗻 𝗿𝗲𝗸𝗹𝗮𝗺𝗶𝗻𝗶𝘇 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿 @StarMusicKanal**🤠")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")

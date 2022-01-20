@@ -40,7 +40,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/tektag <sebeb> - Üyeleri Tek Tek Etiketler**\n\n**/tagadmin <𝗌𝖾𝖻𝖾𝗉> - 𝖦𝗋𝗎𝖻 𝖠𝖽𝗆𝗂𝗇𝗅𝖾𝗋𝗂𝗇𝗂 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗋**\n\n**/cancel - etiketleme işlemini durdurur**"
+  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - 5-li Etiket Atar**\n\n**/tag <sebeb> - Üyeleri Tek Tek Etiketler**\n\n**/utagadmin <𝗌𝖾𝖻𝖾𝗉> - 𝖦𝗋𝗎𝖻 𝖠𝖽𝗆𝗂𝗇𝗅𝖾𝗋𝗂𝗇𝗂 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗋**\n\n**/cancel - etiketleme işlemini durdurur**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  ❤️', 'https://t.me/StarTagBot?startgroup=a')],  
@@ -73,7 +73,7 @@ emoji = " ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 🙂 🙃 😉 😌 �
         "😻 😼 😽 🙀 😿 😾 🔞 🌹 ".split (" ")
 
 
-@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/etag ?(.*)"))
 async def mentionall(event):
   global emoji_calisan
   if event.is_private:
@@ -139,7 +139,7 @@ async def cancel(event):
   emoji_calisan.remove(event.chat_id)
 
 
-@client.on(events.NewMessage(pattern="^/tag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/utag ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
@@ -204,7 +204,7 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
 	
 
-@client.on(events.NewMessage(pattern="^/tektag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tag ?(.*)"))
 async def mentionall(event):
   global tekli_calisan
   if event.is_private:
@@ -270,7 +270,7 @@ async def cancel(event):
 	
 
 
-@client.on(events.NewMessage(pattern="^/tagadmin ?(.*)"))
+@client.on(events.NewMessage(pattern="^/utagadmin ?(.*)"))
 async def mentionall(tagadmin):
 
 	if tagadmin.pattern_match.group(1):

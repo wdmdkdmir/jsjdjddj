@@ -44,7 +44,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  ❤️', 'https://t.me/StarTagBot?startgroup=a')],  
- [Button.url('𝗕𝗶𝗹𝗴𝗶 𝗞𝗮𝗻𝗮𝗹𝗶  💬', 'https://t.me/StarBotKanal')],  [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  🤠', 'https://t.me/ByWolk')],
+ [Button.url('𝗕𝗶𝗹𝗴𝗶 𝗞𝗮𝗻𝗮𝗹𝗶  💬', 'https://t.me/StarBotKanal')], [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  🤠', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )

@@ -73,7 +73,7 @@ emoji = " ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 🙂 🙃 😉 😌 �
         "😻 😼 😽 🙀 😿 😾 🔞 🌹 ".split (" ")
 
 
-@client.on(events.NewMessage(pattern="^/etag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/etag ?"))
 async def mentionall(event):
   global emoji_calisan
   if event.is_private:

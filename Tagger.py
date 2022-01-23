@@ -270,22 +270,22 @@ async def cancel(event):
 	
 
 
-@client.on(events.NewMessage(pattern="^/admintag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tagadmin ?(.*)"))
 async def mentionall(tagadmin):
 
 	if admintag.pattern_match.group(1):
-		seasons = admintag.pattern_match.group(1)
+		seasons = tagadmin.pattern_match.group(1)
 	else:
 		seasons = ""
 
-	chat = await admintag.get_input_chat()
+	chat = await tagadmin.get_input_chat()
 	a_=0
-	await admintag.delete()
+	await tagadmin.delete()
 	async for i in client.iter_participants(chat, filter=cp):
 		if a_ == 500:
 			break
 		a_+=5
-		await admintag.client.send_message(admintag.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
+		await tagadmin.client.send_message(tagadmin.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
 		sleep(0.5)
 
 

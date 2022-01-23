@@ -40,7 +40,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - Grubtaki kullanıcılara 5-li Etiket Atar...**\n\n**/tag <sebeb> - Grubtaki kullanıcıları Tek Tek Etiketler...**\n\n**/admins <sebep> - Grubtaki Adminleri Etiketler...**\n\n**/cancel - etiketleme işlemini durdurur...**"
+  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - Grubtaki kullanıcılara 5-li Etiket Atar...**\n\n**/tag <sebeb> - Grubtaki kullanıcıları Tek Tek Etiketler...**\n\n**/cancel - etiketleme işlemini durdurur...**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  ❤️', 'https://t.me/StarTagBot?startgroup=a')],  
@@ -270,22 +270,22 @@ async def cancel(event):
 	
 
 
-@client.on(events.NewMessage(pattern="^/admins ?(.*)"))
+@client.on(events.NewMessage(pattern="^/admintag ?(.*)"))
 async def mentionall(tagadmin):
 
-	if tagadmin.pattern_match.group(1):
-		seasons = tagadmin.pattern_match.group(1)
+	if admintag.pattern_match.group(1):
+		seasons = admintag.pattern_match.group(1)
 	else:
 		seasons = ""
 
-	chat = await tagadmin.get_input_chat()
+	chat = await admintag.get_input_chat()
 	a_=0
-	await tagadmin.delete()
+	await admintag.delete()
 	async for i in client.iter_participants(chat, filter=cp):
 		if a_ == 500:
 			break
 		a_+=5
-		await tagadmin.client.send_message(tagadmin.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
+		await admintag.client.send_message(admintag.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
 		sleep(0.5)
 
 

@@ -40,7 +40,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - Grubtaki kullanıcılara 5-li Etiket Atar...**\n\n**/tag <sebeb> - Grubtaki kullanıcıları Tek Tek Etiketler...**\n\n**/atag <sebep> - Grubtaki Adminleri Etiketler...**\n\n**/cancel - etiketleme işlemini durdurur...**"
+  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - Grubtaki kullanıcılara 5-li Etiket Atar...**\n\n**/tag <sebeb> - Grubtaki kullanıcıları Tek Tek Etiketler...**\n\n**/utagadmin <sebep> - Grubtaki Adminleri Etiketler...**\n\n**/cancel - etiketleme işlemini durdurur...**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  ❤️', 'https://t.me/StarTagBot?startgroup=a')],  
@@ -270,7 +270,7 @@ async def cancel(event):
 	
 
 
-@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/utagadmin ?(.*)"))
 async def mentionall(tagadmin):
 
 	if tagadmin.pattern_match.group(1):

@@ -34,24 +34,26 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('🎉  𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/StarTaggerBot?startgroup=a')],
-        [Button.url('📝  𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  📝',  'https://t.me/StarBotDestek')], [Button.url('😎  𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  😎', 'https://t.me/ByWolk')],
+                      [Button.url('📝  𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  📝',  'https://t.me/StarBotDestek')], 
+                      [Button.url('😎  𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  😎', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - Grubtaki kullanıcılara 5-li Etiket Atar...**\n\n**/tag <sebeb> - Grubtaki kullanıcıları Tek Tek Etiketler...**\n\n**/cancel - etiketleme işlemini durdurur...**"
+  helptext = "📝 **ᴇᴛɪᴋᴇᴛ ᴛᴀɢɢᴇʀ ᴋᴏᴍᴜᴛʟᴀʀɪ **\n\n**» /utag < sᴇʙᴇᴘ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ 5-ʟɪ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ .  .  !**\n\n**» /tag  < sᴇʙᴇᴘ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴛᴇᴋ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ . . !**\n\n**» /cancel => ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪɴɪ ᴅᴜʀᴅᴜʀᴜʀ . . !**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🎉  𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/StarTagBot?startgroup=a')],  
- [Button.url('📝  𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  📝',  'https://t.me/StarBotDestek')], [Button.url('😎  𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  😎', 'https://t.me/ByWolk')],
+                      [Button.url('🎉  𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/StarTagBot?startgroup=a')],
+                      [Button.url('📝  𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  📝',  'https://t.me/StarBotDestek')],
+                      [Button.url('😎  𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  😎', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Bir çok özelliğe sahip , Etiket Botu Bulmaya Çalışan Grub Sahibleri : @StarTaggerBot Tam Size Göre:\n\n✵ 5-li etiket atabilir\n✵ Tekli Etiket atabilir\n✵ Yalnızca Yöneticilere etiket atabilir\n\n ✵Bir cok ozellige sahip @StarTaggerBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelere , etiket ata bilirsiz. **"
+  helptext = "**📝 ᴇᴛɪᴋᴇᴛ ᴛᴀɢɢᴇʀ ᴋᴏᴍᴜᴛʟᴀʀɪ\n\n» /utag < sᴇʙᴇᴘ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ 5-ʟɪ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ .  .  !\n» /tag  < sᴇʙᴇᴘ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴛᴇᴋ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ . . !\n» /cancel => ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪɴɪ ᴅᴜʀᴅᴜʀᴜʀ . . !\n\n✵ ʙɪʀ ᴄᴏᴋ ᴏᴢᴇʟʟɪɢᴇ sᴀʜɪᴘ @StarTaggerBot 'ᴜ ɢʀᴜʙᴜɴᴜᴢᴀ ʀᴀʜᴀᴛʟɪᴋʟᴀ ᴇᴋʟᴇʏɪᴘ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ . . ! **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🎉  𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/startaggerbot?startgroup=a')],
@@ -142,13 +144,13 @@ async def cancel(event):
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
-    return await event.respond("Bu komutu gruplar ve kanallar için geçerli")
+    return await event.respond("**● ʙᴜ ᴋᴏᴍᴜᴛᴜ ʏᴀʟɴɪᴢᴄᴀ ɢʀᴜʙᴛᴀ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ . . !**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu komutu sadace yoneticiler kullana bilir😐**")
+    return await event.respond("**● ʙᴜ ᴋᴏᴍᴜᴛᴜ ʏᴀʟɴɪᴢᴄᴀ ʏᴏɴᴇᴛɪᴄɪʟᴇʀ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀ . . !**")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -161,7 +163,7 @@ async def mentionall(event):
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
     return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝗂 𝖻𝖺𝗌𝗅𝖺𝗍𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 𝗌𝖾𝖻𝖾𝗉 𝗒𝗈𝗄**")
   else:
-    return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝗂 𝖻𝖺𝗌𝗅𝖺𝗍𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 𝗌𝖾𝖻𝖾𝗉 𝗒𝗈𝗄**")
+    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ < sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
@@ -171,7 +173,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**\n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝖺𝗋𝗂𝗒𝗅𝖺 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 ...** \n\n**𝖣𝗂𝗅𝖾𝗋𝗌𝖾𝗇𝗂𝗓 𝖻𝗎𝗋𝖺𝖽𝖺 𝗌𝗂𝗓𝗂𝗇 𝗋𝖾𝗄𝗅𝖺𝗆𝗂𝗇𝗂𝗓 𝗈𝗅𝖺𝖻𝗂𝗅𝗂𝗋 ... \n => [ @StarBotDestek ] <= **")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n{msg}")
@@ -189,7 +191,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**\n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝖺𝗋𝗂𝗒𝗅𝖺 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 ...**")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -207,13 +209,13 @@ async def cancel(event):
 async def mentionall(event):
   global tekli_calisan
   if event.is_private:
-    return await event.respond("**Bu komutu gruplar ve kanallar için geçerli**")
+    return await event.respond("**● ʙᴜ ᴋᴏᴍᴜᴛᴜ ʏᴀʟɴɪᴢᴄᴀ ɢʀᴜʙᴛᴀ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ . . !**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu komutu sadace yoneticiler kullana bilir😐**")
+    return await event.respond("**● ʙᴜ ᴋᴏᴍᴜᴛᴜ ʏᴀʟɴɪᴢᴄᴀ ʏᴏɴᴇᴛɪᴄɪʟᴇʀ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀ . . !**")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -224,9 +226,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("**önceki mesajı etiketleye bilmerim*")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝖾 𝖻𝖺𝗌𝗅𝖺𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 <𝗌𝖾𝖻𝖾𝗉> 𝗀𝗂𝗋𝗂𝗇 ...**")
+    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ < sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
   else:
-    return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝖾 𝖻𝖺𝗌𝗅𝖺𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 <𝗌𝖾𝖻𝖾𝗉> 𝗀𝗂𝗋𝗂𝗇 ... **")
+    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ < sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
   
   if mode == "text_on_cmd":
     tekli_calisan.append(event.chat_id)
@@ -236,7 +238,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝖺𝗋𝗂𝗒𝗅𝖺 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 ...** \n\n**𝖣𝗂𝗅𝖾𝗋𝗌𝖾𝗇𝗂𝗓 𝖻𝗎𝗋𝖺𝖽𝖺 𝗌𝗂𝗓𝗂𝗇 𝗋𝖾𝗄𝗅𝖺𝗆𝗂𝗇𝗂𝗓 𝗈𝗅𝖺𝖻𝗂𝗅𝗂𝗋 ... \n => [ @StarBotDestek ] <= **")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -254,7 +256,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝖺𝗋𝗂𝗒𝗅𝖺 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 ...** \n\n**𝖣𝗂𝗅𝖾𝗋𝗌𝖾𝗇𝗂𝗓 𝖻𝗎𝗋𝖺𝖽𝖺 𝗌𝗂𝗓𝗂𝗇 𝗋𝖾𝗄𝗅𝖺𝗆𝗂𝗇𝗂𝗓 𝗈𝗅𝖺𝖻𝗂𝗅𝗂𝗋 ... \n => [ @StarBotDestek ] <= **")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)

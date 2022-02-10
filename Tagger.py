@@ -165,7 +165,7 @@ async def mentionall(event):
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
-    usrnum = 0
+    usrnum = 1
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 0
@@ -183,7 +183,7 @@ async def mentionall(event):
   if mode == "text_on_reply":
     anlik_calisan.append(event.chat_id)
  
-    usrnum = 0
+    usrnum = 1
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 0

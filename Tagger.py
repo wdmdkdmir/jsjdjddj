@@ -95,9 +95,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("**Geçmiş mesajlar için etiket ede bilmiom**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("𝖤𝗍𝗂𝗄𝖾𝗍 𝗒𝖺𝗉𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 𝗌𝖾𝖻𝖾𝗉 𝗒𝗈𝗄")
+    return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍 𝗒𝖺𝗉𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 𝗌𝖾𝖻𝖾𝗉 𝗒𝗈𝗄**")
   else:
-    return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝖾 𝖻𝖺𝗌𝗅𝖺𝗆𝖺𝗄 sebep 𝗂𝖼𝗂𝗇 𝗒𝖺𝗓𝗂𝗇...!**")
+    return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝖾 𝖻𝖺𝗌𝗅𝖺𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 sebep 𝗒𝖺𝗓𝗂𝗇...!**")
   
   if mode == "text_on_cmd":
     emoji_calisan.append(event.chat_id)
@@ -163,7 +163,7 @@ async def mentionall(event):
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
     return await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝗂 𝖻𝖺𝗌𝗅𝖺𝗍𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 𝗌𝖾𝖻𝖾𝗉 𝗒𝗈𝗄**")
   else:
-    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ < sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
+    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ \n< sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
@@ -226,9 +226,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("**önceki mesajı etiketleye bilmerim*")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ < sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
+    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ \n< sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
   else:
-    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ < sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
+    return await event.respond("**● ᴇᴛɪᴋᴇᴛ ɪsʟᴇᴍɪɴɪ ʙᴀsʟᴀᴛᴍᴀᴋ ɪᴄɪɴ \n< sᴇʙᴇᴘ > ɢɪʀɪɴ ʏᴀᴅᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ . . !**")
   
   if mode == "text_on_cmd":
     tekli_calisan.append(event.chat_id)

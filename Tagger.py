@@ -30,11 +30,11 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Merhaba ❤️**\n\n ● Grubunuzdaki nerdeyse tüm kullanıcılara etiket atabilirim beni grubunuza ekleyip yetki vermeniz gerekir . . . \n\n● komutlar icin  ➪  /help  yazmanız yeterlidir  . . .",
+  await event.reply("●** ᴍᴇʀʜᴀʙᴀ ❤️**\n\n● **ɢʀᴜʙᴜɴᴜᴢᴅᴀᴋɪ ᴛᴜᴍ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʙɪʟɪʀɪᴍ , ʙᴇɴɪ ɢʀᴜʙᴜɴᴜᴢᴀ ᴇᴋʟᴇʏɪᴘ ʏᴇᴛᴋɪ ᴠᴇʀᴍᴇɴɪᴢ ɢᴇʀᴇᴋɪʀ . . !** \n\n● **ᴛᴜᴍ ᴋᴏᴍᴜᴛʟᴀʀɪ ᴏɢʀᴇɴᴍᴇᴋ ɪᴄɪɴ /help ᴋᴏᴍᴜᴛᴜɴᴜ ᴋᴜʟʟᴀɴɪɴ . . !**",
                     buttons=(
                    
-		      [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  ❤️', 'https://t.me/StarTaggerBot?startgroup=a')],
-        [Button.url('𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  💬',  'https://t.me/StarBotDestek')], [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  🤠', 'https://t.me/ByWolk')],
+		      [Button.url('🎉  𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/StarTaggerBot?startgroup=a')],
+        [Button.url('📝  𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  📝',  'https://t.me/StarBotDestek')], [Button.url('😎  𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  😎', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )
@@ -43,8 +43,8 @@ async def help(event):
   helptext = "**🇹🇷 StarTaggerBot Komutları**\n\n**/utag <sebeb> - Grubtaki kullanıcılara 5-li Etiket Atar...**\n\n**/tag <sebeb> - Grubtaki kullanıcıları Tek Tek Etiketler...**\n\n**/cancel - etiketleme işlemini durdurur...**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  ❤️', 'https://t.me/StarTagBot?startgroup=a')],  
- [Button.url('𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  💬',  'https://t.me/StarBotDestek')], [Button.url('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  🤠', 'https://t.me/ByWolk')],
+                      [Button.url('🎉  𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/StarTagBot?startgroup=a')],  
+ [Button.url('📝  𝗗𝗲𝘀𝘁𝗲𝗸 𝗚𝗿𝘂𝗯𝘂  📝',  'https://t.me/StarBotDestek')], [Button.url('😎  𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿  😎', 'https://t.me/ByWolk')],
                     ),
                     link_preview=False
                    )
@@ -54,7 +54,7 @@ async def help(event):
   helptext = "**Bir çok özelliğe sahip , Etiket Botu Bulmaya Çalışan Grub Sahibleri : @StarTaggerBot Tam Size Göre:\n\n✵ 5-li etiket atabilir\n✵ Tekli Etiket atabilir\n✵ Yalnızca Yöneticilere etiket atabilir\n\n ✵Bir cok ozellige sahip @StarTaggerBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelere , etiket ata bilirsiz. **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲 ❤️', 'https://t.me/startaggerbot?startgroup=a')],
+                      [Button.url('🎉  𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/startaggerbot?startgroup=a')],
                     ),
                     link_preview=False
                    )

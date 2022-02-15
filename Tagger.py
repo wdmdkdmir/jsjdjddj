@@ -74,7 +74,7 @@ emoji = " ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 🙂 🙃 😉 😌 �
         "😻 😼 😽 🙀 😿 😾 🔞 🌹 ".split (" ")
 
 
-@client.on(events.NewMessage(pattern="^/etag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/jssjejs ?(.*)"))
 async def mentionall(event):
   global emoji_calisan
   if event.is_private:
@@ -171,12 +171,12 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**\n"
+      usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**,"
       if event.chat_id not in anlik_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
       if usrnum == 5:
-        await client.send_message(event.chat_id, f"{usrtxt}\n{msg}")
+        await client.send_message(event.chat_id, f"{msg}\n{usrtxt}")
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
@@ -189,7 +189,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**\n"
+      usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**,"
       if event.chat_id not in anlik_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
@@ -271,7 +271,7 @@ async def cancel(event):
 	
 
 
-@client.on(events.NewMessage(pattern="^/tagadmin ?(.*)"))
+@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
 async def mentionall(tagadmin):
 
 	if admintag.pattern_match.group(1):

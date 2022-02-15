@@ -171,7 +171,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**,"
+      usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})** , "
       if event.chat_id not in anlik_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
@@ -189,7 +189,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**,"
+      usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})** , "
       if event.chat_id not in anlik_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
@@ -241,7 +241,7 @@ async def mentionall(event):
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
       if usrnum == 1:
-        await client.send_message(event.chat_id, f"{msg} {usrtxt}")
+        await client.send_message(event.chat_id, f"{msg} \n{usrtxt}")
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""

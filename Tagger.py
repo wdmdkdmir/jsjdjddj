@@ -171,7 +171,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**,"
+      usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**,"
       if event.chat_id not in anlik_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
@@ -189,7 +189,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"• **[{usr.first_name}](tg://user?id={usr.id})**,"
+      usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**,"
       if event.chat_id not in anlik_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
@@ -236,12 +236,12 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id}) \n"
+      usrtxt += f"▸[{usr.first_name}](tg://user?id={usr.id})"
       if event.chat_id not in tekli_calisan:
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n => [ @StarBotDestek ] <= **")
         return
       if usrnum == 1:
-        await client.send_message(event.chat_id, f"{usrtxt} {msg}")
+        await client.send_message(event.chat_id, f"{msg} {usrtxt}")
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
@@ -271,7 +271,7 @@ async def cancel(event):
 	
 
 
-@client.on(events.NewMessage(pattern="^/atag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/admin ?(.*)"))
 async def mentionall(tagadmin):
 
 	if admintag.pattern_match.group(1):

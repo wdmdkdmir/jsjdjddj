@@ -41,7 +41,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "📝 **ᴇᴛɪᴋᴇᴛ ᴛᴀɢɢᴇʀ ᴋᴏᴍᴜᴛʟᴀʀɪ **\n\n**» /utag < sᴇʙᴇᴘ > \nɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ 5-ʟɪ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ .  .  !**\n\n**» /tag  < sᴇʙᴇᴘ > \nɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴛᴇᴋ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ . . !**\n\n**» /cancel => ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪɴɪ ᴅᴜʀᴅᴜʀᴜʀ . . !**"
+  helptext = "📝 **ᴇᴛɪᴋᴇᴛ ᴛᴀɢɢᴇʀ ᴋᴏᴍᴜᴛʟᴀʀɪ **\n\n**» /utag < ᴍᴇsᴀᴊɪɴɪᴢ > \nɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ 5-ʟɪ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ .  .  !**\n\n**» /tag  < ᴍᴇsᴀᴊɪɴɪᴢ > \nɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴛᴇᴋ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ . . !**\n\n**» /cancel => ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪɴɪ ᴅᴜʀᴅᴜʀᴜʀ . . !**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🎉  𝗕𝗲𝗻𝗶 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/StarTagBot?startgroup=a')],
@@ -53,7 +53,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**📝 ᴇᴛɪᴋᴇᴛ ᴛᴀɢɢᴇʀ ᴋᴏᴍᴜᴛʟᴀʀɪ\n\n» /utag < sᴇʙᴇᴘ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ 5-ʟɪ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ .  .  !\n» /tag  < sᴇʙᴇᴘ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴛᴇᴋ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ . . !\n» /cancel => ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪɴɪ ᴅᴜʀᴅᴜʀᴜʀ . . !\n\n✵ ʙɪʀ ᴄᴏᴋ ᴏᴢᴇʟʟɪɢᴇ sᴀʜɪᴘ @StarTaggerBot 'ᴜ ɢʀᴜʙᴜɴᴜᴢᴀ ʀᴀʜᴀᴛʟɪᴋʟᴀ ᴇᴋʟᴇʏɪᴘ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ . . ! **"
+  helptext = "**📝 ᴇᴛɪᴋᴇᴛ ᴛᴀɢɢᴇʀ ᴋᴏᴍᴜᴛʟᴀʀɪ\n\n» /utag < ᴍᴇsᴀᴊɪɴɪᴢ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ 5-ʟɪ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ .  .  !\n» /tag  < ᴍᴇsᴀᴊɪɴɪᴢ > => ɢʀᴜʙᴛᴀᴋɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴛᴇᴋ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀʀ . . !\n» /cancel => ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪɴɪ ᴅᴜʀᴅᴜʀᴜʀ . . !\n\n✵ ʙɪʀ ᴄᴏᴋ ᴏᴢᴇʟʟɪɢᴇ sᴀʜɪᴘ @StarTaggerBot 'ᴜ ɢʀᴜʙᴜɴᴜᴢᴀ ʀᴀʜᴀᴛʟɪᴋʟᴀ ᴇᴋʟᴇʏɪᴘ ᴋᴜʟʟᴀɴᴀʙɪʟɪʀsɪɴɪᴢ . . ! **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🎉  𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲  🎉', 'https://t.me/startaggerbot?startgroup=a')],
@@ -125,7 +125,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝖺𝗋𝗂𝗒𝗅𝖺 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 ...** \n\n**𝖣𝗂𝗅𝖾𝗋𝗌𝖾𝗇𝗂𝗓 𝖻𝗎𝗋𝖺𝖽𝖺 𝗌𝗂𝗓𝗂𝗇 𝗋𝖾𝗄𝗅𝖺𝗆𝗂𝗇𝗂𝗓 𝗈𝗅𝖺𝖻𝗂𝗅𝗂𝗋 ... \n=> [ @StarBotDestek ] <= **")
+        await event.respond("**𝖤𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝖺𝗋𝗂𝗒𝗅𝖺 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 ...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -173,7 +173,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})** , "
       if event.chat_id not in anlik_calisan:
-        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n=> [ @StarBotDestek ] <= **")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{msg}\n{usrtxt}")
@@ -238,7 +238,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id})"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n=> [ @StarBotDestek ] <= **")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} \n{msg}")
@@ -256,7 +256,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n=> [ @StarBotDestek ] <= **")
+        await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)

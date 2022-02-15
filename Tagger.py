@@ -241,7 +241,7 @@ async def mentionall(event):
         await event.respond("**● ᴇᴛɪᴋᴇᴛʟᴇᴍᴇ ɪsʟᴇᴍɪ ʙᴀsᴀʀɪʏʟᴀ ᴅᴜʀᴅᴜʀᴜʟᴅᴜ . . !** \n\n**● ᴅɪʟᴇʀsᴇɴɪᴢ ʙᴜʀᴀᴅᴀ sɪᴢɪɴ ʀᴇᴋʟᴀᴍɪɴɪᴢ ᴏʟᴀʙɪʟɪʀ . . ! \n=> [ @StarBotDestek ] <= **")
         return
       if usrnum == 1:
-        await client.send_message(event.chat_id, f"{usrtxt} {msg}")
+        await client.send_message(event.chat_id, f"{usrtxt} \n{msg}")
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""

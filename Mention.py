@@ -290,5 +290,5 @@ async def mentionall(tagadmin):
 		sleep(0.5)
 
 
-print(">> 𝖡𝗈𝗍 𝖼𝖺𝗅𝗂𝗌𝗂𝗒𝗈𝗋 𝗌𝖺𝗄𝗂𝗇 𝗈𝗅 𝖽𝗈𝗌𝗍𝗎𝗆 😃 @StarBotKanal bilgi alabilirsin <<")
+print(">> Bot Başlatıldı. Üyelere etiket atabilirim. <<")
 client.run_until_disconnected()

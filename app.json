@@ -4,15 +4,15 @@
   "description": "Star Tagger ÜCRETSİZ ŞEKILDE GRUBUNUZDA ÜYELERI ETIKETLEYE BILIR.",
   "env": {
     "TOKEN": {
-      "description": "@botfather Vasitesi ile Ala Bilersen(Gerekli)",
+      "description": "@botfather Telegram ile bottan al yap Token (Gerekli)",
       "value": ""
     },
     "APP_ID": {
-      "description": " my.telegram.org vasitesi ile ala bilersen (Gerekli)",
+      "description": " my.telegram.org Sitesinden geliştirici ayarlarından al (Gerekli)",
       "value": ""
     },
     "API_HASH": {
-      "description": "my.telegram.org Vasitesi ile ala bilersen (Gerekli)",
+      "description": "my.telegram.org Sitesindrn geliştirici ayarlarından al (Gerekli)",
       "value": ""
     }
   },

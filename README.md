@@ -1,7 +1,7 @@
 ### Star Mention Tagger Telegram Destekli Üye Etiketleme Botudur.. 
 
 - Siz ugraşmayın Tek tek ve çoklu üye etiketleme işini bu bota bırakınız. 
-### En Kolay Heroku Dağıtımı 😎
+- En Kolay Heroku Dağıtımı 📦
 
 <p align="center">
     <a href="https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/StarMentionTag">

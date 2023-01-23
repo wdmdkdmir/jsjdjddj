@@ -1,9 +1,9 @@
 import random
 import time
-import telepot
-from telepot.loop import MessageLoop
+import telebot
+from telebot.loop import MessageLoop
 
-bot = telepot.Bot('5869707878:AAGSnac4xeme7HdSRZzElz0-CKp8nkrMlg8') # Telegram Bot Token'ını buraya girin
+bot = telebot.Bot('5869707878:AAGSnac4xeme7HdSRZzElz0-CKp8nkrMlg8') # Telegram Bot Token'ını buraya girin
 
 def action(msg):
     chat_id = msg['chat']['id']

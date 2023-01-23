@@ -10,7 +10,7 @@ bot = telepot.Bot('5869707878:AAGSnac4xeme7HdSRZzElz0-CKp8nkrMlg8') # Telegram B
 
 def action(msg):
 
-    chat_id = msg['chat']['id']
+    chat_id = msg['chat']['-1001193461452']
 
     message = msg['text']
 

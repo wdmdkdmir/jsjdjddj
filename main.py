@@ -4,8 +4,6 @@ import time
 
 import telepot
 
-from telepot.loop import MessageLoop
-
 bot = telepot.Bot('5869707878:AAGSnac4xeme7HdSRZzElz0-CKp8nkrMlg8') # Telegram Bot Token'ını buraya girin
 
 def action(msg):
@@ -18,11 +16,15 @@ def action(msg):
 
         tag_message = message[5:]
 
-        members = bot.getChatMembersCount(chat_id)
+        members = bot.getChatMembersCount(f'-{chat_id}')
 
         while True:
 
-            message = bot.recv()
+            time.sleep(30)
+
+            member = random.randint(0, members - 2)
+
+            bot.sendMessage(chat_id, f'@{member} {tag_message}', 'Markdown')
 
             if message and message["text"] == "/stop":
 
@@ -30,12 +32,6 @@ def action(msg):
 
                 break
 
-            time.sleep(30)
-
-            member = random.randint(0, members - 1)
-
-            bot.sendMessage(chat_id, f'@{member} {tag_message}', 'Markdown')
-
-MessageLoop(bot, action).run_as_thread()
+bot.message_loop(action)
 
 print('Bot çalışıyor...')

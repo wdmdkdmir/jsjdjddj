@@ -1,7 +1,7 @@
 telethon
 cryptg
 requests
-telepot
+
 python-telegram-bot
 
 random

@@ -4,7 +4,7 @@ import time
 
 import telepot
 
-bot = telepot.Bot('5869707878:AAGSnac4xeme7HdSRZzElz0-CKp8nkrMlg8') # Telegram Bot Token'ını buraya girin
+bot = telepot.Bot('5767180230:AAFynCU06695tOBZRXh2J5fIFSLqvoeuNrM') # Telegram Bot Token'ını buraya girin
 
 def action(msg):
 
